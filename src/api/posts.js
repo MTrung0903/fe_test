@@ -1,5 +1,6 @@
 import client from './client.js';
 
+
 export async function getMyPosts(page = 0, size = 10) {
   const res = await client.get(`/posts`, { params: { page, size } });
   return res.data;
